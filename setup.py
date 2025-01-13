@@ -9,7 +9,7 @@ with open('requirements.txt', 'r', encoding="utf-8") as fp:
 
 setuptools.setup(
     name='gcp-sf-utils',
-    version='0.0.6',
+    version='0.0.7',
     author='Inzamam Rahaman',
     author_email='inzamam.rahaman@myguardiangroup.com',
     description='Snowflake utilities for GCP',
