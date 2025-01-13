@@ -8,7 +8,7 @@ with open('requirements.txt', 'r', encoding="utf-8") as fp:
     requirements = list(map(str.strip, contents.split('\n')))
 
 setuptools.setup(
-    name='gcp_sf_utils',
+    name='gcp-sf-utils',
     version='0.0.6',
     author='Inzamam Rahaman',
     author_email='inzamam.rahaman@myguardiangroup.com',
@@ -20,6 +20,6 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/guardian-group-ti/gcp-sf-utils/issues"
     },
     license='MIT',
-    packages=['gcp-sf-utils'],
+    packages=['gcp_sf_utils'],
     install_requires=requirements
 )
