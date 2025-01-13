@@ -8,8 +8,8 @@ with open('requirements.txt', 'r', encoding="utf-8") as fp:
     requirements = list(map(str.strip, contents.split('\n')))
 
 setuptools.setup(
-    name='gcp-sf-utils',
-    version='0.0.5',
+    name='gcp_sf_utils',
+    version='0.0.6',
     author='Inzamam Rahaman',
     author_email='inzamam.rahaman@myguardiangroup.com',
     description='Snowflake utilities for GCP',
