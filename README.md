@@ -8,6 +8,12 @@ This library adheres closely to the interfaces provided by the previous GCP util
 3. The functions retain, where possible the same name and argument orders of the methods in the previous OOP version
 4. The new functional approach requires the connection object to be passed in each time
 
+## Installation Instructions
+
+```bash
+%pip install --upgrade git+https://<github_username>:<github_access_token>@github.com/guardian-group-ti/gcp-sf-utils.git
+```
+
 ## Usage examples
 
 ```python
