@@ -27,7 +27,7 @@ database = # fill in database to be used here
 schema = # schema to be used here, no need to double quote schema starting with numbers
 
 df = # some dataframe to write
-table_name = # name of the table to write df to 
+table_name = # name of the table to write df to; do not double quote table name
 query = # some query to execute
 
 table_to_inspect = # table to get information of columns and types
