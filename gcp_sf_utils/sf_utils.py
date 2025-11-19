@@ -45,11 +45,11 @@ def get_table_description(table_name, ctx):
 
 def insert_dataframe(table_name: str, df: pd.DataFrame, ctx, create_table=True, append_table=True,
                      verbose=True):
-    table_statement = pd.io.sql.get_schema(df, table_name).replace('CREATE', 'CREATE OR REPLACE')
+    table_statement = pd.io.sql.get_schema(df, table_name).replace('CREATE', 'CREATE OR REPLACE', 1)
     # table_statement = table_statement.replace(table_name, f'"{table_name}"')
     if create_table:
         if append_table:
-            table_statement = table_statement.replace('CREATE OR REPLACE TABLE', 'CREATE TABLE IF NOT EXISTS')
+            table_statement = table_statement.replace('CREATE OR REPLACE TABLE', 'CREATE TABLE IF NOT EXISTS', 1)
         if verbose:
             print('Executing ', table_statement)
         execute_query(table_statement, ctx)
